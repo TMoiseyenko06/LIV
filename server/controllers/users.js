@@ -1,3 +1,11 @@
-export const getPosts = (req, res) => {
-    res.send("works")
+import user from "../models/user.js"
+
+export const createUser = async (req, res) => {
+    const bod = req.body
+
+    try{
+        const newUser = new user()
+    } catch (error) {
+
+    }
 }

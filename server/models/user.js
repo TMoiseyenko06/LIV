@@ -1,8 +1,10 @@
 import mongoose from "mongoose";
 
 const userSchema = mongoose.Schema({
+    subjectId: String,
     firstName: String,
     lastName: String,
+    email: String,
     username: String,
     created: {
         type: Date,
@@ -10,6 +12,6 @@ const userSchema = mongoose.Schema({
     }
 })
 
-const user = mongoose.model('user', userSchema)
+const User = mongoose.model('users', userSchema)
 
-export default user
+export default User
